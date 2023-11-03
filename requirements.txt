@@ -1,5 +1,6 @@
 asgiref==3.7.2
-https://files.pythonhosted.org/packages/2d/6d/e87236e3c7b2f5911d132034177aebb605f3953910cc429df8061b13bf10/Django-4.2.7-py3-none-any.whl
+Django==4.2.7
 gunicorn==21.2.0
 packaging==23.2
 sqlparse==0.4.4
+kerykeion==4.2.4
