@@ -374,3 +374,4 @@ zict @ file:///croot/zict_1695832839030/work
 zipp @ file:///work/ci_py311/zipp_1676822894295/work
 zope.interface @ file:///work/ci_py311/zope.interface_1676905896080/work
 zstandard @ file:///work/ci_py311_2/zstandard_1679339489613/work
+gunicorn==20.1.0
