@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+    <title>Execute Script</title>
+    <meta name="csrf-token" content="{{ csrf_token }}">
+</head>
+<body>
+    Date of birth
+    Day<input id="day"></input>
+    Month<input id="month"></input>
+    Year<input id="year"></input>
+    Hour(0-24)<input id="hour"></input>
+    Minutes(0-59)<input id="minutes"></input>
+
+    <button id="execute-script">Execute Script</button>
+    <div id="result"></div>
+
+    <script>
+        let csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+        document.getElementById('execute-script').addEventListener('click', function () {
+            const day = document.getElementById('day').value;
+            const month = document.getElementById('month').value;
+            const year = document.getElementById('year').value;
+            const hour = document.getElementById('hour').value;
+            const minutes = document.getElementById('minutes').value;
+            
+           fetch('/run_script/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrfToken
+        },
+        body: JSON.stringify({
+            day: day,
+            month: month,
+            year: year,
+            hour: hour,
+            minutes: minutes
+        })
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('result').innerText = data;
+    });
+});
+    </script>
+</body>
+</html>

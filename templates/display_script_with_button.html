@@ -1,0 +1,26 @@
+DOCTYPE html>
+<html>
+<head>
+    <title>Display Script with Button</title>
+</head>
+<body>
+    <button id="displayButton">Display Script</button>
+    <pre id="scriptContent"></pre>
+
+    <script>
+        const displayButton = document.getElementById('displayButton');
+        const scriptContent = document.getElementById('scriptContent');
+
+        displayButton.addEventListener('click', () => {
+            // Fetch the script content when the button is clicked
+            fetch
+
+            fetch('/get_script_content/')  // Modify the URL to match your URL pattern
+                .then(response => response.text())
+                .then(data => {
+                    scriptContent.textContent = data;  // Display the script content
+                });
+        });
+    </script>
+</body>
+</html>
