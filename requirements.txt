@@ -293,7 +293,7 @@ safetensors @ file:///croot/safetensors_1692949033383/work
 scikit-image @ file:///croot/scikit-image_1682528309703/work
 scikit-learn @ file:///croot/scikit-learn_1690978916802/work
 scikit-learn-intelex==20230426.111612
-scipy @ file:///croot/scipy_1696543286448/work/dist/scipy-1.11.3-cp311-cp311-linux_x86_64.whl#sha256=f14db5b9e7e3d9de204ef7756f1a1f40f0983293019ed8eacb32191e2f658f9f
+scipy==1.6.3
 Scrapy @ file:///work/ci_py311/scrapy_1677770267574/work
 seaborn @ file:///work/ci_py311/seaborn_1676845747354/work
 SecretStorage @ file:///work/ci_py311_2/secretstorage_1679339060489/work
