@@ -98,29 +98,41 @@ def run_script(request):
           print("")
  match kanye.planets_list[0].sign:
     case "Sco":
-         print(sco)
+        result+=" "
+        result+=sco
     case "Lib":
-         print(lib)
+         result+=" "
+         result+=lib
     case "Vir":
-         print(vir)
+         result+=" "
+         result+=vir
     case "Leo":
-         print(leo) 
+         result+=" "
+         result+=leo
     case "Can":
-         print(can)  
+         result+=" "
+         result+=can
     case "Gem":
-         print(gem)   
+         result+=" "
+         result+=gem
     case "Tau":
-         print(tau)
+         result+=" "
+         result+=tau
     case "Ari":
-         print(ari)
+         result+=" "
+         result+=ari
     case "Pis":
-         print(pis)
+         result+=" "
+         result+=pis
     case "Aqu":
-         print(aqu)
+         result+=" "
+         result+=aqu
     case "Cap":
-         print(cap)
+         result+=" "
+         result+=cap
     case "Sag":
-         print(sag)
+         result+=" "
+         result+=sag
     case _:
           print("")
         
