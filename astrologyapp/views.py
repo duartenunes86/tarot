@@ -20,6 +20,7 @@ def run_script(request):
         year = data['year']
         hour = data['hour']
         minutes = data['minutes']
+        country = data['country']
         year = int(year)
         month = int(month)
         day = int(day)
@@ -28,7 +29,7 @@ def run_script(request):
 
 # Create a kerykeion instance:
 # Args: Name, year, month, day, hour, minuts, city, nation(optional)
- kanye = AstrologicalSubject("Kanye", year, month, day, hour, minutes, "Portugal")
+ kanye = AstrologicalSubject("Kanye", year, month, day, hour, minutes,  country)
 
 # Get the information about the sun in the chart:
 # (The position of the planets always starts at 0)

@@ -12,6 +12,7 @@
     Year<input id="year"></input>
     Hour(0-24)<input id="hour"></input>
     Minutes(0-59)<input id="minutes"></input>
+    Country <input id="country"></input>
 
     <button id="execute-script">Execute Script</button>
     <div id="result"></div>
@@ -24,7 +25,7 @@
             const year = document.getElementById('year').value;
             const hour = document.getElementById('hour').value;
             const minutes = document.getElementById('minutes').value;
-            
+            const country = document.getElementById('country').value;
            fetch('/run_script/', {
         method: 'POST',
         headers: {
@@ -36,7 +37,8 @@
             month: month,
             year: year,
             hour: hour,
-            minutes: minutes
+            minutes: minutes,
+            country: country
         })
     })
     .then(response => response.text())
